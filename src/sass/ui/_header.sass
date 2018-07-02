@@ -1,0 +1,44 @@
+.header
+  background: rgba($warm-grey, 0.7)
+  height: 175px
+  position: absolute
+  top: 0
+  width: 100%
+  padding: 30px 0
+  z-index: 2
+  ul
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+    a
+      color: $white
+      text-transform: uppercase
+  p
+    line-height: 1.33
+    letter-spacing: 0.9px
+    color: $white
+    max-width: 370px
+  &__logo
+    +center
+  &__call
+    display: flex
+    justify-content: flex-end
+    a
+      font-size: 24px
+      font-weight: bold
+      line-height: 1
+      letter-spacing: 1.2px
+      color: $white
+      position: relative
+    p
+      line-height: 1.33
+      letter-spacing: 0.9px
+      color: $white
+      font-size: 18px
+      font-weight: normal
+    i
+      font-size: 33px
+      transform: rotate(15deg)
+      position: absolute
+      left: -40px
+      top: 9px

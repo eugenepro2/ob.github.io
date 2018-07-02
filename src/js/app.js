@@ -1,3 +1,3 @@
-import sayHello from './lib/sayHello.js';
-
-sayHello();
+import select from './lib/selectize.min';
+import './import/swiper';
+import './import/ui';
