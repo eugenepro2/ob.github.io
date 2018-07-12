@@ -5,13 +5,20 @@
   background-size: contain
   background-position: 100% 0
   padding-top: 35px
+  +r(767)
+    background-image: none
   &__logo
+    +r(1024)
+      +center
     img
       width: 125px
   &__social
     padding-top: 25px
     ul
       display: flex
+      +r(1024)
+        justify-content: center
+        margin-bottom: 40px
     li
       padding-right: 20px
     a
@@ -29,6 +36,10 @@
         box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.29)
         border: 4px solid $beige
   &__nav
+    +r(767)
+      +center
+      ul
+        +center-column
     li
       a
         font-size: 14px
@@ -36,7 +47,16 @@
         letter-spacing: 0.7px
         color: $white
         text-transform: uppercase
+        +r(767)
+          display: flex
+          justify-content: center
+          text-align: center
   &__info-user
+    +r(767)
+      +center
+      margin-top: 40px
+      ul
+        +center-column
     li a
       font-size: 14px
       font-weight: 200
@@ -44,6 +64,10 @@
       letter-spacing: 0.7px
       color: $white
       text-decoration: underline
+      +r(767)
+        display: flex
+        justify-content: center
+        text-align: center
   &__created
     padding: 20px 0 30px
     margin-top: 40px

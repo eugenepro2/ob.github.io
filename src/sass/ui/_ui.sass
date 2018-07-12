@@ -8,7 +8,7 @@ body
   width: 100% !important
   max-width: 1165px
   box-sizing: border-box
-  +r(1024)
+  +r(1170)
     padding: 0 15px
 a
   text-decoration: none
@@ -23,12 +23,24 @@ h1, h2, h3, h4
     letter-spacing: 0.5px
     text-align: center
     text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5)
+    +r(767)
+      font-size: 32px
   &-primary
     h2
       color: $black
   &-secondary
     h2
       color: $white
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+	.hidden-sm
+		display: none !important
++rmin(1024)
+	.hidden-md
+		display: none !important
+
 
 .btn
   height: 67px
@@ -40,6 +52,8 @@ h1, h2, h3, h4
   letter-spacing: 1.4px
   font-size: 18px
   +tr
+  +r(767)
+    font-size: 16px
   &-primary
     background-color: $lipstick-red
     color: $white
