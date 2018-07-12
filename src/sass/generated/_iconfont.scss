@@ -13,10 +13,13 @@ $icon-down-arrow: "\EA01";
 $icon-fb: "\EA02";
 $icon-insta: "\EA03";
 $icon-left-arrow: "\EA04";
-$icon-odnoklassniki: "\EA05";
-$icon-phone: "\EA06";
-$icon-right-arrow: "\EA07";
-$icon-vk: "\EA08";
+$icon-mail: "\EA05";
+$icon-odnoklassniki: "\EA06";
+$icon-paper: "\EA07";
+$icon-phone: "\EA08";
+$icon-right-arrow: "\EA09";
+$icon-rub: "\EA0A";
+$icon-vk: "\EA0B";
 
 
 %icon {
@@ -39,7 +42,10 @@ $icon-vk: "\EA08";
 .icon-fb:before { content: $icon-fb; }
 .icon-insta:before { content: $icon-insta; }
 .icon-left-arrow:before { content: $icon-left-arrow; }
+.icon-mail:before { content: $icon-mail; }
 .icon-odnoklassniki:before { content: $icon-odnoklassniki; }
+.icon-paper:before { content: $icon-paper; }
 .icon-phone:before { content: $icon-phone; }
 .icon-right-arrow:before { content: $icon-right-arrow; }
+.icon-rub:before { content: $icon-rub; }
 .icon-vk:before { content: $icon-vk; }

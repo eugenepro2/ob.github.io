@@ -7,3 +7,35 @@ mixin icon(name, modClass)
     - var modClass = ' ' + modClass
   svg(class=name + modClass)
     use(xlink:href= svgSprite + '#' + name)
+
+
+//- mixin breadcrumbs(items)
+//-   .breadcrumbs
+//-     ul
+//-       each item in items
+//-         li
+//-           a(href="#")= item
+
+
+
+mixin breadcrumb(items)
+  .breadcrumb
+    .container
+      .row
+        .col-xs-12
+          each item in items
+            .breadcrumb__item
+              a(href="#")= item
+              span /
+
+mixin article
+  a(href="#").article__block
+    article
+      header
+        img(src="img/article.jpg", alt="")
+      section
+        h1 Название статьи
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      footer
+        .btn.btn-primary Подробнее
+        span 17.07.2018

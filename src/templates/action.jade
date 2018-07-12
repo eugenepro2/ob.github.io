@@ -1,0 +1,44 @@
+---
+title: Акции
+bodyClass: header-fixed
+---
+extends layouts/_layout
+block content
+  section.action
+    +breadcrumb(['Главная', 'Каталог'])
+    .container
+      .row
+        .col-xs-12
+          h2 Акции
+          .action__links
+            a(href="#").is-active Акции
+            a(href="#") Статьи
+            a(href="#") Новости
+          .row
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+            .col-md-4
+              +article
+      include ./partials/_pagination
+
+          

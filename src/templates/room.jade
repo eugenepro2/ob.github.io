@@ -1,0 +1,92 @@
+---
+title: Семейный номер № 1
+---
+extends layouts/_layout
+block content
+  .room
+    +breadcrumb(['Главная', 'Номера', 'Семейный номер № 1'])
+    .container
+      h1 Семейный номер № 1
+      .row
+        .col-xs-7
+          .swiper-container.swiper-rooms-card
+            .swiper-wrapper
+              .swiper-slide(style="background-image: url('../img/rooms.png')")
+              .swiper-slide(style="background-image: url('../img/rooms.png')")
+              .swiper-slide(style="background-image: url('../img/rooms.png')")
+            .swiper-pagination.swiper-pagination-rooms-card
+            .swiper-button-next.swiper-rooms-card-next
+              i.icon.icon-right-arrow
+            .swiper-button-prev.swiper-rooms-card-prev
+              i.icon.icon-left-arrow
+        .col-xs-5
+          .room__text
+            p Комфортабельный номер, в котором есть: кровать двуспальная, 2 тумбочки, 2 кресла или диван, журнальный столик, шкаф для одежды, телевизор, холодильник, туалетный столик, телефон, кондиционер, сифон с минеральной водой, чайник, набор посуды, набор махровых полотенец, халат, фен, сушилка для белья, гладильная доска, утюг, набор для чистки обуви, ванная комната.
+            p Номера в формате блок-секции: <br>общий на 2 комнаты холодильник, санузел и ванная комната.
+            b Цена от:
+              span 1900
+              i.icon.icon-rub
+            a(href="#").btn.btn-primary забронировать
+      .room__conditions
+        .row
+          .col-xs-12
+              h3 В каждом номере:
+          .col-xs-7
+            ul
+              li
+                img(src="img/rooms/room-1.png", alt="")
+                | Круглосуточный сервис
+              li
+                img(src="img/rooms/room-2.png", alt="")
+                | Бесплатный интернет Wi-Fi
+              li
+                img(src="img/rooms/room-3.png", alt="")
+                | Предоставление доп. подушки, одеяла
+              li
+                img(src="img/rooms/room-4.png", alt="")
+                | Предоставление информационных материалов в номере 
+          .col-xs-5
+            ul
+              li
+                h4 Дополнительные платные услуги:
+              li
+                img(src="img/rooms/room-5.png", alt="")
+                | Сейфы с инд. ячейками (на ресепшн)
+              li
+                img(src="img/rooms/room-6.png", alt="")
+                | Услуги прачечной
+              li
+                img(src="img/rooms/room-7.png", alt="")
+                | Подача питания в номер
+      .room__value
+        h3 Стоимость
+        .row.middle-xs
+          .col-xs-7
+            table.table
+              thead
+                tr
+                  th Тип размещения
+                  th
+              tbody
+                tr
+                  td Взрослый
+                  table
+                    tr
+                      td С лечением
+                      td от 2300
+                    tr
+                      td Оздоровительное
+                      td от 2300
+                    tr
+                      td Без лечения
+                      td от 2300
+          .col-xs-5
+            p 
+              span В стоимость лечебной путевки входит:
+              | проживание, 4-х разовое питание, лечение (комплекс медицинских услуг, определяется врачом санатория индивидуально каждому отдыхающему с учетом его основного и сопутствующего заболевания)
+            p 
+              span В стоимость оздоровительной путевки входит:
+              | проживание, 4-х разовое питание, посещение бассейна (после осмотра дерматолога-миколога в санатории), прием минеральной воды перед едой, кислородный коктейль.
+            p 
+              span Дополнительная информация по телефону – 8-800-250-45-90 (звонок бесплатный)
+            
