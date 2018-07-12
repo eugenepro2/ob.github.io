@@ -64,26 +64,39 @@ block content
       .room__value
         h3 Стоимость
         .row.middle-xs
-          .col-md-7.col-sm-6.col-xs-12
-            table.table
-              thead
+          .col-md-7.col-xs-12
+            .table
+              table.table
                 tr
-                  th Тип размещения
+                  th(colspan="2") Тип размещения
                   th
-              tbody
                 tr
-                  td Взрослый
-                  table
-                    tr
-                      td С лечением
-                      td от 2300
-                    tr
-                      td Оздоровительное
-                      td от 2300
-                    tr
-                      td Без лечения
-                      td от 2300
-          .col-md-5.col-sm-6.col-xs-12
+                  td(rowspan="3") Взрослый
+                  td.left С лечением
+                  td от 2300
+                    i.icon.icon-rub
+                tr
+                  td.left Оздоровительное
+                  td от 2300
+                    i.icon.icon-rub
+                tr
+                  td.left Без лечения
+                  td от 2300
+                    i.icon.icon-rub
+                tr
+                  td(rowspan="3")Ребёнок от 4 до 14 лет
+                  td.left С лечением
+                  td от 2300
+                    i.icon.icon-rub
+                tr
+                  td.left Оздоровительное
+                  td от 2300
+                    i.icon.icon-rub
+                tr
+                  td.left Без лечения
+                  td от 2300
+                    i.icon.icon-rub
+          .col-md-5.col-xs-12
             p 
               span В стоимость лечебной путевки входит:
               | проживание, 4-х разовое питание, лечение (комплекс медицинских услуг, определяется врачом санатория индивидуально каждому отдыхающему с учетом его основного и сопутствующего заболевания)
