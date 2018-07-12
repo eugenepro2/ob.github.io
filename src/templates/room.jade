@@ -8,18 +8,21 @@ block content
     .container
       h1 Семейный номер № 1
       .row
-        .col-xs-7
+        .col-md-7.col-sm-6.col-xs-12
           .swiper-container.swiper-rooms-card
             .swiper-wrapper
-              .swiper-slide(style="background-image: url('../img/rooms.png')")
-              .swiper-slide(style="background-image: url('../img/rooms.png')")
-              .swiper-slide(style="background-image: url('../img/rooms.png')")
+              .swiper-slide
+                img(src="img/rooms.png", alt="")
+              .swiper-slide
+                img(src="img/rooms.png", alt="")
+              .swiper-slide
+                img(src="img/rooms.png", alt="")
             .swiper-pagination.swiper-pagination-rooms-card
             .swiper-button-next.swiper-rooms-card-next
               i.icon.icon-right-arrow
             .swiper-button-prev.swiper-rooms-card-prev
               i.icon.icon-left-arrow
-        .col-xs-5
+        .col-md-5.col-sm-6.col-xs-12
           .room__text
             p Комфортабельный номер, в котором есть: кровать двуспальная, 2 тумбочки, 2 кресла или диван, журнальный столик, шкаф для одежды, телевизор, холодильник, туалетный столик, телефон, кондиционер, сифон с минеральной водой, чайник, набор посуды, набор махровых полотенец, халат, фен, сушилка для белья, гладильная доска, утюг, набор для чистки обуви, ванная комната.
             p Номера в формате блок-секции: <br>общий на 2 комнаты холодильник, санузел и ванная комната.
@@ -30,8 +33,8 @@ block content
       .room__conditions
         .row
           .col-xs-12
-              h3 В каждом номере:
-          .col-xs-7
+            h3 В каждом номере:
+          .col-md-7.col-sm-6.col-xs-12
             ul
               li
                 img(src="img/rooms/room-1.png", alt="")
@@ -45,7 +48,7 @@ block content
               li
                 img(src="img/rooms/room-4.png", alt="")
                 | Предоставление информационных материалов в номере 
-          .col-xs-5
+          .col-md-5.col-sm-6.col-xs-12
             ul
               li
                 h4 Дополнительные платные услуги:
@@ -61,7 +64,7 @@ block content
       .room__value
         h3 Стоимость
         .row.middle-xs
-          .col-xs-7
+          .col-md-7.col-sm-6.col-xs-12
             table.table
               thead
                 tr
@@ -80,7 +83,7 @@ block content
                     tr
                       td Без лечения
                       td от 2300
-          .col-xs-5
+          .col-md-5.col-sm-6.col-xs-12
             p 
               span В стоимость лечебной путевки входит:
               | проживание, 4-х разовое питание, лечение (комплекс медицинских услуг, определяется врачом санатория индивидуально каждому отдыхающему с учетом его основного и сопутствующего заболевания)
