@@ -1,5 +1,7 @@
 .room
   padding-top: 170px
+  +r(767)
+    padding-top: 100px
   h1
     font-size: 48px
     line-height: 1.25
@@ -7,6 +9,8 @@
     color: $black
     margin-top: 45px
     margin-bottom: 30px
+    +r(767)
+      font-size: 32px
   .swiper-container
     &:before, &:after
       content: ''
@@ -42,6 +46,7 @@
     padding-left: 15px
     +r(767)
       padding-left: 0
+      padding-top: 20px
     p
       font-size: 18px
       font-weight: 300
