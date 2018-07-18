@@ -23,6 +23,10 @@
         color: $white
   &__content
     padding: 50px 0
+    .row
+      margin-bottom: 30px
+      +r(1024)
+        margin-bottom: 0
     h3
       font-size: 24px
       line-height: 1.25
@@ -49,18 +53,28 @@
         font-size: 24px
   &__block
     background-color: $beige
-    padding: 35px 45px
+    padding: 35px 45px 70px
     +center-column
     width: calc(100% - 10px)
     margin-bottom: 30px
-    min-height: 430px
-    justify-content: space-between
+    height: 100%
+    position: relative
+    justify-content: flex-start
     +r(1024)
       width: 100%
+      height: auto
     +r(767)
-      padding: 15px
+      padding: 15px 15px 70px
+    .btn
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translate(-50%)
+      +r(1024)
+        bottom: 20px
     img
       margin-bottom: 15px
+      height: 75px
     h4
       font-size: 24px
       font-weight: 300
@@ -70,6 +84,9 @@
       color: $black
       text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5)
       margin-bottom: 10px
+      min-height: 60px
+      +r(1140)
+        min-height: 75px
       +r(767)
         font-size: 18px
     p
@@ -79,5 +96,8 @@
       text-align: center
       color: $black
       margin-bottom: 10px
+      min-height: 165px
+      +r(1140)
+        min-height: 75px
       +r(767)
         font-size: 14px

@@ -86,6 +86,9 @@
   &__call
     display: flex
     justify-content: flex-end
+    &:hover
+      a, p
+        color: $lipstick-red
     a
       font-size: 24px
       font-weight: bold
@@ -93,12 +96,14 @@
       letter-spacing: 1.2px
       color: $white
       position: relative
+      +tr
     p
       line-height: 1.33
       letter-spacing: 0.9px
       color: $white
       font-size: 18px
       font-weight: normal
+      +tr
     i
       font-size: 33px
       transform: rotate(15deg)

@@ -142,7 +142,6 @@
         margin-right: 30px
         +r(1100)
           margin-bottom: 15px
-          width: 100%
         &:last-child
           color: $white
           background: $lipstick-red
@@ -171,9 +170,12 @@
       +r(1024)
         margin-bottom: 40px
       +r(767)
-        +center
+        +center-column
       img
         padding-right: 35px
+        +r(767)
+          padding-right: 0
+          padding-bottom: 10px
     p
       font-size: 18px
       font-weight: normal

@@ -81,6 +81,7 @@
     .tabs__caption
       display: flex
       margin-bottom: 30px
+      justify-content: space-between
       +r(767)
         flex-direction: column
       li
@@ -90,6 +91,7 @@
         background: $brown-grey
         +center-y
         padding: 0 40px
+        padding-right: 55px
         font-size: 18px
         line-height: 1.33
         letter-spacing: 0.2px
@@ -98,6 +100,8 @@
         position: relative
         cursor: pointer
         +tr
+        &:last-child
+          margin-right: 0
         +r(767)
           width: 100%
           margin-bottom: 10px
