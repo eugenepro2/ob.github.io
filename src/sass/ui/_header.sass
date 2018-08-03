@@ -13,15 +13,15 @@
   .menu-open
     position: absolute
     left: 20px
-    top: 20px
+    top: 65px
     width: 30px
     height: 30px
     display: none
     z-index: 99
-    +r(1024)
+    +r(1100)
       display: block
     +r(767)
-      top: 50%
+      top: 55%
       transform: translate(0, -50%)
     span
       width: 30px
@@ -40,6 +40,9 @@
         top: 0
       &:after
         bottom: 8px
+  nav
+    +r(1100)
+      display: none
   ul
     display: flex
     justify-content: space-between
@@ -59,8 +62,8 @@
     letter-spacing: 0.9px
     color: $white
     max-width: 370px
-    +r(1024)
-      padding-right: 20px
+    +r(1100)
+      padding-left: 60px
   &__logo
     +center
     position: relative
@@ -71,7 +74,7 @@
       width: 1500px
       height: 2px
       background: $white
-      +r(1024)
+      +r(1100)
         bottom: 6px
       +r(767)
         display: none
@@ -79,7 +82,7 @@
       left: 190px
     &:after
       right: 190px
-    +r(767)
+    +r(1100)
       img
         height: 80px
         margin-top: 10px
@@ -104,6 +107,8 @@
       font-size: 18px
       font-weight: normal
       +tr
+      +r(1100)
+        padding-left: 0
     i
       font-size: 33px
       transform: rotate(15deg)
